@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programming Courses Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="images/programming-logo.png" alt="Programming Courses Logo" class="main-logo">
+      <h1>Programming Courses Website</h1>
+      <p>Start your programming journey today.</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="home.html">Home</a>
+        <a class="nav-link" href="login.html">Login</a>
+        <a class="nav-link" href="index.html">Register</a>
+        <a class="nav-link" href="guide.html">User Guide</a>
+        <a class="nav-link" href="support.html">Help & Support</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro-card">
+      <h2>Create Your Account</h2>
+      <p>Register now to access our beginner-friendly programming courses. This is a static demo page for beginner learning.</p>
+    </section>
+
+    <section class="form-section">
+      <form id="registerForm">
+        <div class="form-row">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+        </div>
+        <div class="form-row">
+          <label for="registerEmail">Email</label>
+          <input type="email" id="registerEmail" name="registerEmail" placeholder="you@example.com" required />
+        </div>
+        <div class="form-row">
+          <label for="registerPassword">Password</label>
+          <input type="password" id="registerPassword" name="registerPassword" placeholder="Create a password" required />
+        </div>
+        <div class="form-row">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+      </form>
+      <div id="registerMessage" class="success-message" aria-live="polite"></div>
+      <p class="form-footer">Already have an account? <a href="login.html">Login here</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Welcome to the programming course website.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
